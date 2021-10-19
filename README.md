@@ -7,7 +7,7 @@ Ausias Bertran's Web Curriculum Vitae
 * CSS 3
 
 ## Setup
-To run this project run index.html on cd folder.
+To start this project run index.html on cd folder.
 ```
 $ cd CV
 $ index.html
