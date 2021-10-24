@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EAAC,gBAAgB,EAAC,GAAG;CAAE",
+    "mappings": "ACAA,OAAO,CAAC,0EAAI;AAEZ,OAAO,CAAC,2FAAI;AAGZ,OAAO,CAAC,uIAAI;AAIZ,OAAO,CAAC,mEAAI;ADPZ,AAAA,CAAC,CAAA;EAAC,WAAW,EAAE,2BAA2B;CAAG;;AAC7C,AAAA,EAAE,CAAA;EAAC,WAAW,EAAE,2BAA2B;CAAG;;AAC9C,AAAA,EAAE,CAAA;EAAC,WAAW,EAAE,qCAAqC;CAAG;;AACxD,AAAA,CAAC,CAAA;EAAC,WAAW,EAAE,oBAAoB;CAAG;;AACtC,AAAA,IAAI,CAAC;EAAC,gBAAgB,EAAC,GAAG;CAAE",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "_fonts.scss"
     ],
     "names": [],
     "file": "style.css"
