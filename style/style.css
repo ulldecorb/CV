@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
   font-family: 'Zen Kurenaido', sans-serif;
-  color: yellow;
+  color: black;
 }
 
 h1 {
@@ -13,13 +13,21 @@ h1 {
 
 h2 {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 10px;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
 }
 
 p {
   font-family: 'Ubuntu', sans-serif;
+  color: #817e7c;
+  font-size: small;
 }
 
 body {
-  background-color: #000;
+  background-color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */

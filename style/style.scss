@@ -1,7 +1,9 @@
 @import "fonts";
 
-*{font-family: 'Zen Kurenaido', sans-serif;color:rgb(255, 255, 0)}
+// *{font-family: 'Zen Kurenaido', sans-serif;color:rgb(255, 255, 0)}
+*{font-family: 'Zen Kurenaido', sans-serif;color:rgb(0, 0, 0)}
 h1{font-family: 'Zen Kurenaido', sans-serif;}
-h2{font-family: 'Zen Kaku Gothic Antique', sans-serif;}
-p{font-family: 'Ubuntu', sans-serif;}
-body {background-color:#000}
+h2{font-family: 'Zen Kaku Gothic Antique', sans-serif;font-size:10px;}
+h2{font-family: 'Arial', sans-serif;font-size:10px;}
+p{font-family: 'Ubuntu', sans-serif;color:#817e7c; font-size: small;}
+body {background-color:#FFF}
