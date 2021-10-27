@@ -7,6 +7,7 @@ Ausias Bertran's Web Curriculum Vitae
 * Javascript ECMA6
 * HTML 5
 * CSS 3
+* SASS
 
 ## Setup
 To start this project run index.html on cd folder.
