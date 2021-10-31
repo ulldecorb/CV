@@ -15,3 +15,7 @@ To start this project run index.html on cd folder.
 $ cd CV
 $ index.html
 ```
+## Scope of functionalities
+Features
+* Two skins modes
+* Refactor Read-me
