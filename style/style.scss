@@ -1,7 +1,8 @@
 @import "fonts";
 @import "colors";
+@import "variables";
 
-$rotation-header:-5;
+
 
 *{font-family: 'Zen Kurenaido', sans-serif;color:rgb(255, 255, 0);list-style:none;}
 h1{font-family: 'Zen Kurenaido', sans-serif;}
@@ -34,9 +35,17 @@ body { background-image: radial-gradient(circle, #333333, #222222)}
     }
 }
 
-section {
+.personal {
     border: 2px solid yellow;
     padding: 3vmin;
+    @include flex (row, center, center);
+
+    &__list{
+        @include flex (row, center, center);
+        * {
+            padding: 0 1vmin;
+        }
+    }
 }
 
 .experience {
