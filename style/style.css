@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Kurenaido&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Kaku+Gothic+Antique:wght@400;700&family=Zen+Kurenaido&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sarpanch:900");
 * {
   font-family: 'Zen Kurenaido', sans-serif;
   color: yellow;
@@ -23,14 +24,36 @@ p {
 }
 
 body {
-  background-color: #000;
+  background-image: radial-gradient(circle, #333333, #222222);
 }
 
-header {
+.header {
   width: 100vw;
   height: auto;
   top: 5vh;
   text-align: center;
+}
+
+.header__title {
+  font-family: 'Sarpanch', sans-serif;
+  -webkit-transform: skew(-5deg) rotate(-5deg);
+          transform: skew(-5deg) rotate(-5deg);
+  grid-area: text;
+  font-size: 10vmin;
+  margin: 0;
+  padding: 30px;
+  color: #1d9099;
+  text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
+}
+
+.header__sub-title {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  -webkit-transform: skew(-5deg) rotate(-5deg);
+          transform: skew(-5deg) rotate(-5deg);
+  font-size: 5vmin;
+  margin: -7vmin;
+  color: #222;
+  text-shadow: 0.25vmin 0.25vmin 0 #E79C10, -0.25vmin -0.25vmin 0 #D53A33;
 }
 
 .experience h3 + p {
