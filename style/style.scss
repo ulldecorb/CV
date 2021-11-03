@@ -1,17 +1,41 @@
 @import "fonts";
 @import "colors";
 
+$rotationAmt:-5;
+
 *{font-family: 'Zen Kurenaido', sans-serif;color:rgb(255, 255, 0);list-style:none;}
 h1{font-family: 'Zen Kurenaido', sans-serif;}
 h2{font-family: 'Zen Kaku Gothic Antique', sans-serif;}
 p{font-family: 'Ubuntu', sans-serif;color:#817e7c; font-size: small;}
-body {background-color:#000}
+body { background-image: radial-gradient(circle, #333333, #222222)}
 
-header {
+.header {
     width:100vw;
     height: auto;
     top:5vh;
     text-align: center;
+    
+
+    &__title{
+        font-family: 'Sarpanch', sans-serif;
+        transform: skew(#{$rotationAmt}deg) rotate(#{$rotationAmt}deg);
+        grid-area: text;
+        font-size: 10vmin;
+        margin: 0;
+        padding: 30px;
+        color: #1d9099;
+        text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
+    }
+    &__sub-title{
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        transform: skew(#{$rotationAmt}deg) rotate(#{$rotationAmt}deg);
+        font-size: 5vmin;
+        margin: -7vmin;
+        // padding: -30px;
+        color: #222;
+        text-shadow: 0.25vmin 0.25vmin 0 #E79C10, -0.25vmin -0.25vmin 0 #D53A33;
+
+    }
 }
 .experience {
     
