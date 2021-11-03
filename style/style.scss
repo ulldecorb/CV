@@ -1,7 +1,7 @@
 @import "fonts";
 @import "colors";
 
-$rotationAmt:-5;
+$rotation-header:-5;
 
 *{font-family: 'Zen Kurenaido', sans-serif;color:rgb(255, 255, 0);list-style:none;}
 h1{font-family: 'Zen Kurenaido', sans-serif;}
@@ -15,28 +15,30 @@ body { background-image: radial-gradient(circle, #333333, #222222)}
     top:5vh;
     text-align: center;
     
-
     &__title{
         font-family: 'Sarpanch', sans-serif;
-        transform: skew(#{$rotationAmt}deg) rotate(#{$rotationAmt}deg);
-        grid-area: text;
+        transform: skew(#{$rotation-header}deg) rotate(#{$rotation-header}deg);
         font-size: 10vmin;
-        margin: 0;
+        margin-top: -2vmin;
         padding: 30px;
         color: #1d9099;
         text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
     }
     &__sub-title{
         font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        transform: skew(#{$rotationAmt}deg) rotate(#{$rotationAmt}deg);
+        transform: skew(#{$rotation-header}deg) rotate(#{$rotation-header}deg);
         font-size: 5vmin;
-        margin: -7vmin;
-        // padding: -30px;
+        margin: -17vmin 0 0 45vmin;
         color: #222;
         text-shadow: 0.25vmin 0.25vmin 0 #E79C10, -0.25vmin -0.25vmin 0 #D53A33;
-
     }
 }
+
+section {
+    border: 2px solid yellow;
+    padding: 3vmin;
+}
+
 .experience {
     
     h3 + p {
@@ -69,5 +71,4 @@ body { background-image: radial-gradient(circle, #333333, #222222)}
             text-align: center;
         }
     }
-
 }
