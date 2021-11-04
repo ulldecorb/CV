@@ -7,6 +7,7 @@
   font-family: 'Zen Kurenaido', sans-serif;
   color: yellow;
   list-style: none;
+  overflow: auto;
 }
 
 h1 {
@@ -25,13 +26,27 @@ p {
 
 body {
   background-image: radial-gradient(circle, #333333, #222222);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
   width: 100vw;
-  height: auto;
+  height: 10vw;
   top: 5vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .header__title {
@@ -106,6 +121,10 @@ main .about-me__box {
           align-items: center;
 }
 
+main .about-me__box:hover {
+  font-size: 4em;
+}
+
 main .experience {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,16 +179,24 @@ main .education__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .education__box h3 {
+  margin: 0.5vmin;
+}
+
+main .education__box p {
+  margin: 0.5vmin 0;
 }
 
 main .experience {
@@ -187,6 +214,10 @@ main .experience {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+main .experience h3 + p {
+  color: #F00;
 }
 
 main .experience__box {
@@ -239,11 +270,13 @@ main .skills__box {
 }
 
 main .skills__box-list {
+  padding: 2vmin;
   width: 33.33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid red;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -256,12 +289,30 @@ main .skills__box-list {
           align-items: center;
 }
 
-main .skills__box-list li {
-  text-align: center;
+main .skills__box-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  margin: 0;
+}
+
+main .skills__box-list ul li {
+  margin: 0;
 }
 
 main article:first-child {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 main article:last-child {
@@ -274,7 +325,6 @@ main article:last-child {
   left: 0;
   height: 10vh;
   width: 100vw;
-  border: 2px solid yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,9 +383,5 @@ main article:last-child {
   background-size: cover;
   background-position: center;
   background-color: #1d9099;
-}
-
-.experience h3 + p {
-  color: #F00;
 }
 /*# sourceMappingURL=style.css.map */
