@@ -35,8 +35,25 @@ body { background-image: radial-gradient(circle, #333333, #222222)}
     }
 }
 
+main {
+    @include flex( column, center, center);
+    width: 80vw;
+
+    article:first-child {
+        margin-top: 10vh;
+    }
+
+    article:last-child {
+        margin-bottom: 10vh;
+    }
+}
+
 .personal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     height:10vh;
+    width: 100vw;
     border: 2px solid yellow;
     // padding: 3vmin;
     @include flex (row, center, center);
@@ -84,12 +101,14 @@ body { background-image: radial-gradient(circle, #333333, #222222)}
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 
     &__box {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
+        @include flex(row, center, flex-start);
+        // display:flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: flex-start;
     }
 
     &__box-list {
