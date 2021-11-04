@@ -7,12 +7,12 @@ const skillsBox = document.getElementById('skills__box').style;
 const aboutMeBox = document.getElementById('about-me__box').style;
 const experienceBox = document.getElementById('experience__box').style;
 const educationBox = document.getElementById('education__box').style;
-let counter = 0;
+let titleIntervalcounter = 0;
 
 setInterval(() => {
-    counter%2 && (titleColor.color = '#f0f')
-    !(counter%2) && (titleColor.color = '#000')
-    counter ++;
+    titleIntervalcounter%2 && (titleColor.color = '#f0f')
+    !(titleIntervalcounter%2) && (titleColor.color = '#000')
+    titleIntervalcounter ++;
 }, 800);
 
 aboutMe.addEventListener('click', () => {
