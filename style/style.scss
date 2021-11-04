@@ -4,11 +4,24 @@
 
 
 
-*{font-family: 'Zen Kurenaido', sans-serif;color:rgb(255, 255, 0);list-style:none;}
+*{
+    font-family: 'Zen Kurenaido', sans-serif;
+    color:rgb(255, 255, 0);
+    list-style:none;
+    // overflow:hidden;
+}
+
 h1{font-family: 'Zen Kurenaido', sans-serif;}
+
 h2{font-family: 'Zen Kaku Gothic Antique', sans-serif;}
-p{font-family: 'Ubuntu', sans-serif;color:#817e7c; font-size: small;}
-body { background-image: radial-gradient(circle, #333333, #222222)}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    color:#817e7c;
+    font-size: small;
+}
+
+body {background-image: radial-gradient(circle, #333333, #222222)}
 
 .header {
     width:100vw;
@@ -25,6 +38,7 @@ body { background-image: radial-gradient(circle, #333333, #222222)}
         color: #1d9099;
         text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
     }
+
     &__sub-title{
         font-family: 'Zen Kaku Gothic Antique', sans-serif;
         transform: skew(#{$rotation-header}deg) rotate(#{$rotation-header}deg);
@@ -38,6 +52,69 @@ body { background-image: radial-gradient(circle, #333333, #222222)}
 main {
     @include flex( column, center, center);
     width: 80vw;
+    margin: auto;
+    
+    .about-me {
+        @include flex( column, center, center);
+        cursor:pointer;
+
+        &__box {
+            @include flex( row, center, center);
+        }
+    }
+
+    .experience {
+        @include flex( column, center, center);
+        cursor:pointer;
+
+        &__box {
+            @include flex( row, center, center);
+        }
+    }
+
+    .education {
+        @include flex( column, center, center);
+        cursor:pointer;
+
+        &__box {
+            @include flex( row, center, center);
+        }
+    }
+
+    .experience {
+        @include flex( column, center, center);
+        cursor:pointer;
+
+
+        &__box {
+            @include flex( row, center, center);
+        }
+    }
+
+    .skills {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+    
+        &__box {
+            @include flex(row, center, flex-start);
+        }
+    
+        &__box-list {
+            width: 33.33%;
+            display: flex;
+            border:1px solid red;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+    
+            li {
+                text-align: center;
+            }
+        }
+    }
 
     article:first-child {
         margin-top: 10vh;
@@ -55,7 +132,6 @@ main {
     height:10vh;
     width: 100vw;
     border: 2px solid yellow;
-    // padding: 3vmin;
     @include flex (row, center, center);
 
     &__list{
@@ -93,34 +169,5 @@ main {
     
     h3 + p {
         color:$background-color;
-    }
-}
-
-.skills {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor:pointer;
-
-    &__box {
-        @include flex(row, center, flex-start);
-        // display:flex;
-        // flex-direction: row;
-        // justify-content: center;
-        // align-items: flex-start;
-    }
-
-    &__box-list {
-        width: 33.33%;
-        display: flex;
-        border:1px solid red;
-        flex-direction: column;
-        // justify-content: flex-start;
-        align-items: center;
-
-        li {
-            text-align: center;
-        }
     }
 }
