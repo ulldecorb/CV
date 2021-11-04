@@ -55,8 +55,37 @@ body {
   text-shadow: 0.25vmin 0.25vmin 0 #E79C10, -0.25vmin -0.25vmin 0 #D53A33;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+}
+
+main article:first-child {
+  margin-top: 10vh;
+}
+
+main article:last-child {
+  margin-bottom: 10vh;
+}
+
 .personal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   height: 10vh;
+  width: 100vw;
   border: 2px solid yellow;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +165,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .skills__box {
