@@ -56,7 +56,7 @@ body {
 main {
     @include flex( column, center, center);
     width: 80vw;
-    margin: auto;
+    // margin: auto;
     
     .about-me {
         @include flex( column, center, center);
@@ -145,7 +145,7 @@ main {
     }
 }
 
-.personal {
+.contact {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -156,31 +156,32 @@ main {
 
     &__list{
         @include flex (row, center, center);
+
         * {
             padding: 0 1vmin;
         }
         a {
-            padding:0;
-            margin:0;
-            height: 6vmin;
-            width: 6vmin;
+            // padding:0;
+            // margin:0;
+            height: 2vmin;
+            width: 2vmin;
             cursor: pointer;
         }
         .linkedin-icon {
             height: 4vmin;
-            width: 4vmin;
-            background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+            width: 2vmin;
+            background-image: url('../assets/linkedin-icon.svg');
             background-size: cover;
             background-position: center;
         }
 
         .github-icon {
             height: 4vmin;
-            width: 4vmin;
-            background-image: url('https://github.githubassets.com/images/modules/logos_page/Octocat.png');
+            width: 2vmin;
+            background-image: url('../assets/github-icon.svg');
             background-size: cover;
             background-position: center;
-            background-color:#1d9099
+            // background-color:#1d9099
         }
     }
 }

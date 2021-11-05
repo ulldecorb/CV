@@ -85,7 +85,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 80vw;
-  margin: auto;
 }
 
 main .about-me {
@@ -319,7 +318,7 @@ main article:last-child {
   margin-bottom: 10vh;
 }
 
-.personal {
+.contact {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -340,7 +339,7 @@ main article:last-child {
           align-items: center;
 }
 
-.personal__list {
+.contact__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,32 +355,29 @@ main article:last-child {
           align-items: center;
 }
 
-.personal__list * {
+.contact__list * {
   padding: 0 1vmin;
 }
 
-.personal__list a {
-  padding: 0;
-  margin: 0;
-  height: 6vmin;
-  width: 6vmin;
+.contact__list a {
+  height: 2vmin;
+  width: 2vmin;
   cursor: pointer;
 }
 
-.personal__list .linkedin-icon {
+.contact__list .linkedin-icon {
   height: 4vmin;
-  width: 4vmin;
-  background-image: url("https://cdn-icons-png.flaticon.com/512/174/174857.png");
+  width: 2vmin;
+  background-image: url("../assets/linkedin-icon.svg");
   background-size: cover;
   background-position: center;
 }
 
-.personal__list .github-icon {
+.contact__list .github-icon {
   height: 4vmin;
-  width: 4vmin;
-  background-image: url("https://github.githubassets.com/images/modules/logos_page/Octocat.png");
+  width: 2vmin;
+  background-image: url("../assets/github-icon.svg");
   background-size: cover;
   background-position: center;
-  background-color: #1d9099;
 }
 /*# sourceMappingURL=style.css.map */
