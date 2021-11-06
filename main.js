@@ -10,7 +10,7 @@ const educationBox = document.getElementById('education__box').style;
 let titleIntervalcounter = 0;
 
 setInterval(() => {
-    titleIntervalcounter%2 && (titleColor.color = '#f0f')
+    titleIntervalcounter%2 && (titleColor.color = '#1d9099')
     !(titleIntervalcounter%2) && (titleColor.color = '#000')
     titleIntervalcounter ++;
 }, 800);
