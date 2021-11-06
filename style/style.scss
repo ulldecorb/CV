@@ -7,8 +7,8 @@
 *{
     font-family: 'Zen Kurenaido', sans-serif;
     color:rgb(255, 255, 0);
-    list-style:none;
-    overflow:auto;
+    list-style: none;
+    // overflow: hidden;
 }
 
 h1{font-family: 'Zen Kurenaido', sans-serif;}
@@ -24,6 +24,8 @@ p{
 body {
     background-image: radial-gradient(circle, #333333, #222222);
     @include flex( column, center, center);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .header {
@@ -57,6 +59,7 @@ main {
     @include flex( column, center, center);
     width: 80vw;
     // margin: auto;
+    overflow: hidden;
     
     .about-me {
         @include flex( column, center, center);
@@ -120,16 +123,70 @@ main {
             padding: 2vmin;
             width: 33.33%;
             display: flex;
-            border:1px solid red;
+            // border:1px solid red;
             @include flex (column, flex-start, center);
             
             ul {
-                @include flex (column, center, center);
+                @include flex (row, center, center);
+                flex-wrap: wrap;
                 width:20vw;
                 margin:0;
 
                 li {
-                    margin:0;
+                    padding: 0.5vmin;
+                    width: calc(20vw / 4);
+                    height: calc(20vw / 3);
+
+                }
+                .li {
+                    &__html {
+                        background-image: url("../assets/html-1.svg");
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &__css {
+                        background-image: url('../assets/css-3.svg');
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &__sass {
+                        background-image: url('../assets/sass-1.svg');
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &__bem {
+                        background-image: url('../assets/bem.svg');
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &__javascript {
+                        background-image: url('../assets/javascript-1.svg');
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &__react {
+                        background-image: url('../assets/react-2.svg');
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &__redux {
+                        background-image: url('../assets/redux.svg');
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &__typescript {
+                        background-image: url('../assets/typescript.svg');
+                        background-size: 90% 90%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
                 }
                 // text-align: center;
             }
@@ -149,10 +206,13 @@ main {
     position: fixed;
     bottom: 0;
     left: 0;
-    height:10vh;
+    height:6vh;
     width: 100vw;
+    background-color: #E79C10;
     // border: 2px solid yellow;
     @include flex (row, center, center);
+    overflow: hidden;
+
 
     &__list{
         @include flex (row, center, center);
@@ -185,3 +245,6 @@ main {
         }
     }
 }
+
+// 3r4 d3 n0ch3 y s1n 3mb4rg0 ll0v14 
+// T0Pr0t3ct4ndS3rv3
