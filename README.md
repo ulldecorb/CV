@@ -19,3 +19,4 @@ $ index.html
 Features
 * Two skins modes
 * Refactor Read-me
+* Allow download CV pdf file
