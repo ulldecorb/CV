@@ -3,6 +3,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Kaku+Gothic+Antique:wght@400;700&family=Zen+Kurenaido&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Sarpanch:900");
+::-webkit-scrollbar {
+  width: 0.75vw;
+}
+
+::-webkit-scrollbar:hover {
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background: #b30000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fa672c;
+}
+
 * {
   font-family: 'Zen Kurenaido', sans-serif;
   color: yellow;
