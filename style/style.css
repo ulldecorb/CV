@@ -434,6 +434,14 @@ body {
   cursor: pointer;
 }
 
+.contact__list .mail-icon {
+  height: 4vmin;
+  width: 2vmin;
+  background-image: url("../assets/gmail-icon.svg");
+  background-size: cover;
+  background-position: center;
+}
+
 .contact__list .linkedin-icon {
   height: 4vmin;
   width: 2vmin;

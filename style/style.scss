@@ -238,6 +238,14 @@ body {
             cursor: pointer;
         }
 
+        .mail-icon {
+            height: 4vmin;
+            width: 2vmin;
+            background-image: url('../assets/gmail-icon.svg');
+            background-size: cover;
+            background-position: center;
+        }
+
         .linkedin-icon {
             height: 4vmin;
             width: 2vmin;
