@@ -131,12 +131,14 @@ body {
         }
         
         
+
         &__box-list {
             padding: 2vmin;
             width: 33.33%;
             display: flex;
             // border:1px solid red;
             @include flex (column, flex-start, center);
+            transform: skew(#{$rotation-header}deg)  rotate(#{$rotation-header-negative}deg);
             
             ul {
                 @include flex (row, center, center);
@@ -232,4 +234,11 @@ body {
             background-position: center;
         }
     }
+}
+
+main article:nth-of-type(even) {
+    transform: skew(#{$rotation-header}deg) rotate(#{$rotation-header}deg);
+}
+main article:nth-of-type(odd) {
+    transform: skew(#{$rotation-header-negative}deg) rotate(#{$rotation-header-negative}deg);
 }
