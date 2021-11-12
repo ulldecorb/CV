@@ -447,6 +447,14 @@ body {
   background-position: center;
 }
 
+.contact__list .cv-icon {
+  height: 4vmin;
+  width: 2vmin;
+  background-image: url("../assets/cv.svg");
+  background-size: cover;
+  background-position: center;
+}
+
 .contact__list .linkedin-icon {
   height: 4vmin;
   width: 2vmin;
