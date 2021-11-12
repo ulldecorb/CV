@@ -60,6 +60,11 @@ body {
     top: 5vh;
     text-align: center;
     overflow:hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    // background-color: #000;
+
     
     &__title{
         font-family: 'Sarpanch', sans-serif;
@@ -91,6 +96,7 @@ body {
     .about-me {
         @include flex( column, center, center);
         cursor:pointer;
+        margin-bottom: 4vh;
 
         &__box {
             @include flex( row, center, center);
@@ -105,6 +111,7 @@ body {
     .experience {
         @include flex( column, center, center);
         cursor:pointer;
+        margin-bottom: 4vh;
 
         h3 + h4 {
             color: $company;
@@ -206,7 +213,7 @@ body {
     }
 
     article:first-child {
-        margin-top: 0vh;
+        margin-top: 25vh;
     }
 
     article:last-child {
@@ -236,6 +243,22 @@ body {
             height: 2vmin;
             width: 2vmin;
             cursor: pointer;
+        }
+
+        .mail-icon {
+            height: 4vmin;
+            width: 2vmin;
+            background-image: url('../assets/gmail-icon.svg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cv-icon {
+            height: 4vmin;
+            width: 2vmin;
+            background-image: url('../assets/cv.svg');
+            background-size: cover;
+            background-position: center;
         }
 
         .linkedin-icon {

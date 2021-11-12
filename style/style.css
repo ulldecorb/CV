@@ -72,6 +72,9 @@ body {
   top: 5vh;
   text-align: center;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .header__title {
@@ -129,6 +132,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  margin-bottom: 4vh;
 }
 
 .main .about-me__box {
@@ -167,6 +171,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  margin-bottom: 4vh;
 }
 
 .main .experience h3 + h4 {
@@ -377,7 +382,7 @@ body {
 }
 
 .main article:first-child {
-  margin-top: 0vh;
+  margin-top: 25vh;
 }
 
 .main article:last-child {
@@ -432,6 +437,22 @@ body {
   height: 2vmin;
   width: 2vmin;
   cursor: pointer;
+}
+
+.contact__list .mail-icon {
+  height: 4vmin;
+  width: 2vmin;
+  background-image: url("../assets/gmail-icon.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact__list .cv-icon {
+  height: 4vmin;
+  width: 2vmin;
+  background-image: url("../assets/cv.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .contact__list .linkedin-icon {
