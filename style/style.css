@@ -48,7 +48,7 @@ p {
 }
 
 body {
-  background-image: radial-gradient(circle, #333333, #222222);
+  background: #b68484;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

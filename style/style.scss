@@ -48,7 +48,8 @@ p{
 }
 
 body {
-    background-image: radial-gradient(circle, #333333, #222222);
+    // background-image: radial-gradient(circle, #333333, #222222);
+    background: rgb(182, 132, 132);
     @include flex( column, center, center);
     overflow-x: hidden;
     overflow-y: auto;
