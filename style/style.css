@@ -48,7 +48,7 @@ p {
 }
 
 body {
-  background: #b68484;
+  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,6 +86,36 @@ body {
   padding: 30px;
   color: #1d9099;
   text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
+  -webkit-animation: focus-in-contract 1s ease 0s 1 normal none;
+          animation: focus-in-contract 1s ease 0s 1 normal none;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
 }
 
 .header__sub-title {
