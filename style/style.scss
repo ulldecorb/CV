@@ -75,7 +75,21 @@ body {
         padding: 30px;
         color: #1d9099;
         text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
+        animation: focus-in-contract 1s ease 0s 1 normal none;
+
     }
+
+    @keyframes focus-in-contract {
+        0%{
+          letter-spacing: 1em;
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100%{
+          filter: blur(0);
+          opacity: 1;
+        }
+      }
 
     &__sub-title{
         font-family: 'Zen Kaku Gothic Antique', sans-serif;
