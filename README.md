@@ -1,6 +1,5 @@
 # CV
-Ausias Bertran's Web Curriculum Vitae   
-See on web [here.](https://ulldecorb.github.io/cv-vanila/)
+Ausias Bertran's Web Curriculum Vitae.   
 
 ## Technologies
 * Javascript ECMA6
@@ -14,6 +13,8 @@ To start this project run index.html on cd folder.
 $ cd CV
 $ index.html
 ```
+
+Or see on web [here.](https://ulldecorb.github.io/cv-vanila/)   
 ## Scope of functionalities
 Features
 * Two skins modes
