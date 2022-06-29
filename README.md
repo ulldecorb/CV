@@ -1,5 +1,6 @@
 # CV
-Ausias Bertran's Web Curriculum Vitae
+Ausias Bertran's Web Curriculum Vitae   
+See on web [here.](https://ulldecorb.github.io/cv-vanila/)
 
 ## Technologies
 * Javascript ECMA6
