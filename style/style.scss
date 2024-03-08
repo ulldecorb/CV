@@ -74,9 +74,8 @@ body {
         margin-top: -2vmin;
         padding: 30px;
         color: #1d9099;
-        text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
+        text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33, 1.2vmin 1.2vmin .8vmin #000, -1.2vmin -1.2vmin .8vmin #000;
         animation: focus-in-contract 1s ease 0s 1 normal none;
-
     }
 
     @keyframes focus-in-contract {
@@ -98,7 +97,7 @@ body {
         margin: -17vmin 0 0 45vmin;
         background-color: transparent;
         color: #222;
-        text-shadow: 0.25vmin 0.25vmin 0 #E79C10, -0.25vmin -0.25vmin 0 #D53A33;
+        text-shadow: 0.25vmin 0.25vmin 0 #E79C10, -0.25vmin -0.25vmin 0 #D53A33,  .5vmin .5vmin .4vmin #000, -.5vmin -.5vmin .4vmin #000;
     }
 }
 
