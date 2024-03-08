@@ -198,7 +198,7 @@ body {
                     &:hover {
                         background-color: #E79C10;
                         figcaption {
-                            color: #444;
+                            color: rgb(168, 0, 0);
                         }
                     }
                     
@@ -208,7 +208,7 @@ body {
                     }
                     
                     figcaption {
-                        color: red;
+                        color: rgb(228, 251, 55);
                         width: 5vw;
                         height: calc(5vw / 3);
                         font-size: calc(0.45em + 0.45vw);
